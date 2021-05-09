@@ -1,49 +1,26 @@
-**Show User**
+**CARGAS**
 ----
-  Returns json data about a single user.
-
-* **URL**
-
-  /users/:id
-
-* **Method:**
-
-  `GET`
+  Rotas para Cargas.
   
-*  **URL Params**
+| rotas      | URL parametros                       | Data parametros                    
+|:--------------|:----------------------------------|:----------------------------------|
+| `/app/camadas/cargas/get.php` | `?codigo=1` | None
 
-   **Required:**
- 
-   `id=[integer]`
 
-* **Data Params**
 
-  None
+* **Eemplo Data parametros add e Update:**
 
-* **Success Response:**
-
-  * **Code:** 200 <br />
-    **Content:** `{ id : 12, name : "Michael Bloom" }`
- 
-* **Error Response:**
-
-  * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
-
-  OR
-
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
-
-* **Sample Call:**
-
-  ```javascript
-    $.ajax({
-      url: "/users/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
+  ```json
+   {
+    "NAVIO": 1,
+    "PORTO": 1,
+    "PESO": 50,
+    "DATADESEMBARQUE": "2021-04-04",
+    "CODIGOAGENTE": 1,
+    "DATAVALIDADE": "2021-04-04",
+    "TEMPERATURAMAXIMA": 50,
+    "PERECIVEL" : "false",
+    "SENSIVEL" : "false",
+    "ETIQUETA": "D"
+  }
   ```
