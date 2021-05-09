@@ -1,0 +1,49 @@
+--------------- cargas ---------------
+
+#GET
+
+URI: http://localhost/transporte-maritimo/app/camadas/cargas/get.php?codigo=57
+
+
+#ADD
+
+URI: http://localhost/transporte-maritimo/app/camadas/cargas/add.php
+
+BobyExample-JSON: 
+{
+    "NAVIO": 1,
+    "PORTO": 1,
+    "PESO": 50,
+    "DATADESEMBARQUE": "2021-04-04",
+    "CODIGOAGENTE": 1,
+    "DATAVALIDADE": "2021-04-04",
+    "TEMPERATURAMAXIMA": 50,
+    "PERECIVEL" : "false",
+    "SENSIVEL" : "false",
+    "ETIQUETA": "D"
+}
+
+
+#UPDATE
+
+URI: http://localhost/transporte-maritimo/app/camadas/cargas/update.php?codigo=57
+
+BobyExample-JSON:
+{
+    "NAVIO": 1,
+    "PORTO": 1,
+    "PESO": 50,
+    "DATADESEMBARQUE": "2021-04-04",
+    "CODIGOAGENTE": 1,
+    "DATAVALIDADE": "2021-04-04",
+    "TEMPERATURAMAXIMA": 50,
+    "PERECIVEL" : "false",
+    "SENSIVEL" : "false",
+    "ETIQUETA": "TESTEUPDATE"
+}
+
+
+
+#DELETE
+
+URI: http://localhost/transporte-maritimo/app/camadas/cargas/delete.php?codigo=57

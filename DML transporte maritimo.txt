@@ -1,0 +1,71 @@
+CREATE DATABASE `transporte_maritimo`;
+
+
+============== CARGAS ===================== 
+CREATE TABLE transporte_maritimo.Cargas (
+	ID_NAVIO INT NULL,
+	ID_PORTO INT NULL,
+	PESO DECIMAL NOT NULL,
+	DATA_DESEMBARQUE DATE NULL,
+	CODIGO_AGENTE INT NULL,
+	DATA_VALIDADE DATE NULL,
+	PERECIVEL BOOL NOT NULL,
+	TEMPERATURA_MAXIMA DECIMAL NULL,
+	SENSIVEL BOOL NOT NULL,
+	ETIQUETA varchar(100) NULL,
+	ID_CARGA INT PRIMARY KEY auto_increment NOT NULL
+)
+
+
+
+
+
+============== NAVIOS ===================== 
+CREATE TABLE transporte_maritimo.NAVIOS (
+	ID_NAVIO INT PRIMARY KEY auto_increment NOT NULL,
+	CAPACIDADE DECIMAL NOT NULL,
+	NOME varchar(100) NOT NULL
+)
+
+
+
+
+
+============== PORTOS ===================== 
+CREATE TABLE transporte_maritimo.PORTOS (
+	ID_PORTO INT PRIMARY KEY auto_increment NOT NULL,
+	NOME varchar(100) NOT NULL
+)
+
+
+
+
+
+
+============== AGENTES ===================== 
+CREATE TABLE transporte_maritimo.AGENTES (
+	ID_AGENTE INT PRIMARY KEY auto_increment NOT NULL,
+	ID_PORTO INT NOT NULL,
+	NOME varchar(100) NOT NULL
+)
+
+
+
+
+
+
+============== ROTAS =====================
+CREATE TABLE transporte_maritimo.ROTAS (
+	ID_ROTA INT PRIMARY KEY auto_increment NOT NULL,
+	NOME varchar(100) NOT NULL,
+	PORTO_EMBARQUE INT NOT NULL,
+	PORTO_DESEMBARQUE INT NOT NULL
+)
+
+
+
+CREATE TABLE transporte_maritimo.NAVIO_ROTA (
+	ID_NAVIO_ROTA INT PRIMARY KEY auto_increment NOT NULL,
+	ID_NAVIO INT NOT NULL,
+	ID_ROTA INT NOT NULL
+)

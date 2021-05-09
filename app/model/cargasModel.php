@@ -51,13 +51,13 @@ class cargasModel
         $request->NAVIO = empty($request->NAVIO) ? 'NULL' : $request->NAVIO;
         $request->PORTO = empty($request->PORTO) ? 'NULL' : $request->PORTO;
         $request->PESO = empty($request->PESO) ? 'NULL' : $request->PESO;
-        $request->DATADESEMBARQUE = empty($request->DATADESEMBARQUE) ? 'NULL' : $request->DATADESEMBARQUE;
+        $request->DATADESEMBARQUE = empty($request->DATADESEMBARQUE) ? 'NULL' : "'$request->DATADESEMBARQUE'";
         $request->CODIGOAGENTE = empty($request->CODIGOAGENTE) ? 'NULL' : $request->CODIGOAGENTE;
-        $request->DATAVALIDADE = empty($request->DATAVALIDADE) ? 'NULL' : $request->DATAVALIDADE;
+        $request->DATAVALIDADE = empty($request->DATAVALIDADE) ? 'NULL' : "'$request->DATAVALIDADE'";
         $request->PERECIVEL = empty($request->PERECIVEL) ? 'NULL' : $request->PERECIVEL;
         $request->TEMPERATURAMAXIMA = empty($request->TEMPERATURAMAXIMA) ? 'NULL' : $request->TEMPERATURAMAXIMA;
         $request->SENSIVEL = empty($request->SENSIVEL) ? 'NULL' : $request->SENSIVEL;
-        $request->ETIQUETA = empty($request->ETIQUETA) ? 'NULL' : $request->ETIQUETA;
+        $request->ETIQUETA = empty($request->ETIQUETA) ? 'NULL' : "'$request->ETIQUETA'";
 
        
         try{
@@ -104,13 +104,13 @@ class cargasModel
         $request->NAVIO = empty($request->NAVIO) ? 'NULL' : $request->NAVIO;
         $request->PORTO = empty($request->PORTO) ? 'NULL' : $request->PORTO;
         $request->PESO = empty($request->PESO) ? 'NULL' : $request->PESO;
-        $request->DATADESEMBARQUE = empty($request->DATADESEMBARQUE) ? 'NULL' : $request->DATADESEMBARQUE;
+        $request->DATADESEMBARQUE = empty($request->DATADESEMBARQUE) ? 'NULL' : "'$request->DATADESEMBARQUE'";
         $request->CODIGOAGENTE = empty($request->CODIGOAGENTE) ? 'NULL' : $request->CODIGOAGENTE;
-        $request->DATAVALIDADE = empty($request->DATAVALIDADE) ? 'NULL' : $request->DATAVALIDADE;
+        $request->DATAVALIDADE = empty($request->DATAVALIDADE) ? 'NULL' : "'$request->DATAVALIDADE'";
         $request->PERECIVEL = empty($request->PERECIVEL) ? 'NULL' : $request->PERECIVEL;
         $request->TEMPERATURAMAXIMA = empty($request->TEMPERATURAMAXIMA) ? 'NULL' : $request->TEMPERATURAMAXIMA;
         $request->SENSIVEL = empty($request->SENSIVEL) ? 'NULL' : $request->SENSIVEL;
-        $request->ETIQUETA = empty($request->ETIQUETA) ? 'NULL' : $request->ETIQUETA;
+        $request->ETIQUETA = empty($request->ETIQUETA) ? 'NULL' : "'$request->ETIQUETA'";
 
        
         try{
