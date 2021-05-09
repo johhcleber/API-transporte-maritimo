@@ -2,12 +2,12 @@
 ----
   Rotas para Cargas.
   
-| rotas      | URL parametros                       | Data parametros                    
-|:--------------|:----------------------------------|:----------------------------------|
-| `/app/camadas/cargas/get.php` | `?codigo=1` | None
-| `/app/camadas/cargas/add.php` | None | JSON
-| `/app/camadas/cargas/update.php` | `?codigo=1` | JSON
-| `/app/camadas/cargas/delete.php` | `?codigo=1` | None
+| rotas      | URL parametros                       | Data parametros                   | Verbo 
+|:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
+| `/app/camadas/cargas/get.php` | `?codigo=1` | None | GET
+| `/app/camadas/cargas/add.php` | None | JSON | POST
+| `/app/camadas/cargas/update.php` | `?codigo=1` | JSON | POST
+| `/app/camadas/cargas/delete.php` | `?codigo=1` | None | GET
 
 
 
