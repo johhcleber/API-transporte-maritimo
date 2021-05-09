@@ -5,10 +5,13 @@
 | rotas      | URL parametros                       | Data parametros                    
 |:--------------|:----------------------------------|:----------------------------------|
 | `/app/camadas/cargas/get.php` | `?codigo=1` | None
+| `/app/camadas/cargas/add.php` | None | JSON
+| `/app/camadas/cargas/update.php` | `?codigo=1` | JSON
+| `/app/camadas/cargas/delete.php` | `?codigo=1` | None
 
 
 
-* **Eemplo Data parametros add e Update:**
+* **Exemplo Data parametros add e Update:**
 
   ```json
    {
