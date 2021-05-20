@@ -8,7 +8,7 @@
 | `/api/Carga/add` | None | JSON | POST
 | `/api/Carga/update` | `/codigo` | JSON | POST
 | `/api/Carga/delete` | `/codigo` | None | GET
-| `/api/Carga/getAll` | `/codigo` | None | GET
+| `/api/Carga/getAll` |  | None | GET
 
 
 * **Exemplo Data parametros add e Update:**
@@ -40,7 +40,7 @@
 | `/api/Agente/add` | None | JSON | POST
 | `/api/Agente/update` | `/codigo` | JSON | POST
 | `/api/Agente/delete` | `/codigo` | None | GET
-| `/api/Agente/getAll` | `/codigo` | None | GET
+| `/api/Agente/getAll` |  | None | GET
 
 
 * **Exemplo Data parametros add e Update:**
@@ -63,7 +63,7 @@
 | `/api/Porto/add` | None | JSON | POST
 | `/api/Porto/update` | `/codigo` | JSON | POST
 | `/api/Porto/delete` | `/codigo` | None | GET
-| `/api/Porto/getAll` | `/codigo` | None | GET
+| `/api/Porto/getAll` |  | None | GET
 
 
 * **Exemplo Data parametros add e Update:**
