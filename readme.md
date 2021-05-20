@@ -4,11 +4,11 @@
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
-| `/app/camadas/Carga/get` | `/codigo` | None | GET
-| `/app/camadas/Carga/add` | None | JSON | POST
-| `/app/camadas/Carga/update` | `/codigo` | JSON | POST
-| `/app/camadas/Carga/delete` | `/codigo` | None | GET
-| `/app/camadas/Carga/getAll` | `/codigo` | None | GET
+| `/api/Carga/get` | `/codigo` | None | GET
+| `/api/Carga/add` | None | JSON | POST
+| `/api/Carga/update` | `/codigo` | JSON | POST
+| `/api/Carga/delete` | `/codigo` | None | GET
+| `/api/Carga/getAll` | `/codigo` | None | GET
 
 
 * **Exemplo Data parametros add e Update:**
@@ -36,11 +36,11 @@
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
-| `/app/camadas/Agente/get` | `/codigo` | None | GET
-| `/app/camadas/Agente/add` | None | JSON | POST
-| `/app/camadas/Agente/update` | `/codigo` | JSON | POST
-| `/app/camadas/Agente/delete` | `/codigo` | None | GET
-| `/app/camadas/Agente/getAll` | `/codigo` | None | GET
+| `/api/Agente/get` | `/codigo` | None | GET
+| `/api/Agente/add` | None | JSON | POST
+| `/api/Agente/update` | `/codigo` | JSON | POST
+| `/api/Agente/delete` | `/codigo` | None | GET
+| `/api/Agente/getAll` | `/codigo` | None | GET
 
 
 * **Exemplo Data parametros add e Update:**
@@ -59,11 +59,11 @@
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
-| `/app/camadas/Porto/get` | `/codigo` | None | GET
-| `/app/camadas/Porto/add` | None | JSON | POST
-| `/app/camadas/Porto/update` | `/codigo` | JSON | POST
-| `/app/camadas/Porto/delete` | `/codigo` | None | GET
-| `/app/camadas/Porto/getAll` | `/codigo` | None | GET
+| `/api/Porto/get` | `/codigo` | None | GET
+| `/api/Porto/add` | None | JSON | POST
+| `/api/Porto/update` | `/codigo` | JSON | POST
+| `/api/Porto/delete` | `/codigo` | None | GET
+| `/api/Porto/getAll` | `/codigo` | None | GET
 
 
 * **Exemplo Data parametros add e Update:**
