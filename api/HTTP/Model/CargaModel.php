@@ -1,8 +1,7 @@
 <?php
 
-use app\db\Conexao;
 
-class cargasModel
+class CargaModel
 {
     private $db;
 
@@ -17,10 +16,10 @@ class cargasModel
     {
         $sql = "SELECT C.ID_CARGA as codigo,
         (select n.nome from navios n) as navio,
-        (select p.nome from portos p) as porto,
+        (select p.nome from portos p where p.ID_PORTO = c.ID_PORTO) as porto,
         c.peso,
         c.DATA_DESEMBARQUE,
-        (select a.nome from agentes a) agente,
+        (select a.nome from agentes a where a.ID_AGENTE = c.CODIGO_AGENTE) agente,
         c.DATA_VALIDADE,
         case when c.PERECIVEL = 1 then 'SIM' when c.PERECIVEL = 0 then 'NÃO' end as perecivel, 
         c.TEMPERATURA_MAXIMA,
@@ -31,7 +30,9 @@ class cargasModel
         $pre = $this->db->prepare($sql);
         $pre->execute();
 
-        return $pre->fetchAll();
+        $rows = $pre->fetchAll();
+
+        return $this->removeColumnsNumeric($rows);
     }
 
     public function get($codigo = 'NULL') 
@@ -43,7 +44,7 @@ class cargasModel
 
         $rows = $pre->fetchAll();
 
-        return json_encode($rows);
+        return $this->removeColumnsNumeric($rows);
     }
 
     public function add($request)
@@ -151,6 +152,26 @@ class cargasModel
 
         $rows = $pre->fetchAll();
 
-        return json_encode(["success" => "carga deletada com sucesso"]);
+        return ["carga deletada com sucesso"];
+    }
+
+    private function removeColumnsNumeric($rows) 
+    {
+        $return = $rows;
+
+        foreach($return as $keyRow => $row){
+
+            foreach($row as $keyColumn => $column) {
+
+                if(is_numeric($keyColumn)){
+                    unset($return[$keyRow][$keyColumn]);
+                }else{
+                    unset($return[$keyRow][$keyColumn]);
+                    $return[$keyRow][strtoupper($keyColumn)] = $column;
+                }
+            }
+        }
+
+        return $return;
     }
 }

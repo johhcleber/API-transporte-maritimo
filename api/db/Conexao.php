@@ -1,8 +1,5 @@
 <?php
 
-namespace app\db;
-
-use PDO;
 
 class Conexao {
 
@@ -24,7 +21,7 @@ class Conexao {
     		self::$conexao->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
 		}catch(PDOException $e){
-				echo $e->getMessage();
+				
 		}
 
     }

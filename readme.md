@@ -4,11 +4,11 @@
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
-| `/app/camadas/cargas/get.php` | `?codigo=1` | None | GET
-| `/app/camadas/cargas/add.php` | None | JSON | POST
-| `/app/camadas/cargas/update.php` | `?codigo=1` | JSON | POST
-| `/app/camadas/cargas/delete.php` | `?codigo=1` | None | GET
-
+| `/app/camadas/Carga/get` | `/codigo` | None | GET
+| `/app/camadas/Carga/add` | None | JSON | POST
+| `/app/camadas/Carga/update` | `/codigo` | JSON | POST
+| `/app/camadas/Carga/delete` | `/codigo` | None | GET
+| `/app/camadas/Carga/getAll` | `/codigo` | None | GET
 
 
 * **Exemplo Data parametros add e Update:**
@@ -26,4 +26,51 @@
     "SENSIVEL" : "false",
     "ETIQUETA": "D"
   }
+  ```
+
+
+
+**AGENTES**
+----
+  Rotas para Agentes.
+  
+| rotas      | URL parametros                       | Data parametros                   | Verbo 
+|:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
+| `/app/camadas/Agente/get` | `/codigo` | None | GET
+| `/app/camadas/Agente/add` | None | JSON | POST
+| `/app/camadas/Agente/update` | `/codigo` | JSON | POST
+| `/app/camadas/Agente/delete` | `/codigo` | None | GET
+| `/app/camadas/Agente/getAll` | `/codigo` | None | GET
+
+
+* **Exemplo Data parametros add e Update:**
+
+  ```json
+    {
+      "PORTO": 1,
+      "NOME": "Teste"
+    }
+  ```
+
+
+**PORTOS**
+----
+  Rotas para Portos.
+  
+| rotas      | URL parametros                       | Data parametros                   | Verbo 
+|:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
+| `/app/camadas/Porto/get` | `/codigo` | None | GET
+| `/app/camadas/Porto/add` | None | JSON | POST
+| `/app/camadas/Porto/update` | `/codigo` | JSON | POST
+| `/app/camadas/Porto/delete` | `/codigo` | None | GET
+| `/app/camadas/Porto/getAll` | `/codigo` | None | GET
+
+
+* **Exemplo Data parametros add e Update:**
+
+  ```json
+     {
+        "PORTO": 1,
+        "NOME": "TESTE"
+      }
   ```
