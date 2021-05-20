@@ -70,7 +70,6 @@
 
   ```json
      {
-        "PORTO": 1,
         "NOME": "TESTE"
       }
   ```
