@@ -1,6 +1,6 @@
 **CARGAS**
 ----
-  Rotas para Cargas.
+  Endpoint para Cargas.
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
@@ -32,7 +32,7 @@
 
 **AGENTES**
 ----
-  Rotas para Agentes.
+  Endpoint para Agentes.
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
@@ -55,7 +55,7 @@
 
 **PORTOS**
 ----
-  Rotas para Portos.
+  Endpoint para Portos.
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
@@ -77,7 +77,7 @@
 
 **NAVIOS**
 ----
-  Rotas para Navios.
+  Endpoint para Navios.
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
@@ -100,7 +100,7 @@
 
 **ROTAS**
 ----
-  Rotas para as Rotas existente.
+  Endpoint para as Rotas existente.
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
@@ -124,7 +124,7 @@
 
 **ROTAS_NAVIO**
 ----
-  Rotas para relacionamento de navios com as rotas existentes.
+  Endpoint para relacionamento de navios com as rotas existentes.
   
 | rotas      | URL parametros                       | Data parametros                   | Verbo 
 |:--------------|:----------------------------------|:----------------------------------|:----------------------------------|
